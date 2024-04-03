@@ -1,7 +1,7 @@
  
  
  html{
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
     margin-top: 20px;
     background-color: #d3d3d3;
@@ -12,10 +12,20 @@
       min-width: 500px;
   }*/
   
-  div {
-  }
+  
   
   #header {
+    height: 25%;
+    width: 90%;
+    
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    z-index: 1;
+  }
+
+  #headerabout {
     height: 25%;
     width: 90%;
     padding-top: 5%;
@@ -24,11 +34,10 @@
     padding-bottom: 5%;
     z-index: 1;
     border-bottom: 2px solid black;
-
   }
   #content {
     height: 25%;
-    width: 100%;
+    width: 90%;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -50,15 +59,15 @@
 
   
   .stuff {
-    display: inline-block;
-    margin:auto;
     width: 100%;
     border: 4px solid black;
     background-color: white;
+    
 
   }
   
   p,
+  b,
   li,
   h1 {
     font-family: 'Roboto';
@@ -66,10 +75,10 @@
   
   .head {
     font-size: 20px;
+    
   }
   
   #name {
-    font-family: 'Roboto';
     float: right;
     margin-top: 10px;
     margin-right: 4%;
@@ -83,15 +92,17 @@
   @media only screen and (max-width: 430px) {
     .left,
     .right {
+      
       display: none;
     }}
     .active {
       background-color: #5daa8e;
       color: white;
+      font: 'Roboto';
     }
   .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 15%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -99,6 +110,7 @@
     background-color: rgb(66, 66, 66);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    font-family: 'Roboto';
   }
   
   /* The navigation menu links */
@@ -116,9 +128,8 @@
   }
   
   /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+  .stuff {
+    margin-left: 10%;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
