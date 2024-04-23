@@ -64,10 +64,27 @@
                     This was done to simulate and gain experience in how professional cloud teams manage their accounts.
                 </p>
             </p>
-            <p class="head"><b>S3 Hosting</b> <b style="color:#5daa8e">(Complete)</b></p>
+            <p class="head"><b>S3 and CloudFront Hosting</b> <b style="color:#5daa8e">(Complete)</b></p>
 
             <p>
-                This website is hosted on S3 with HTTPS for security and Amazon CloudFront for distribution. Amazon Route 53 to register domain.
+                This website is hosted on S3 and distributed with Amazon CloudFront
+                <ul>
+                    <li>
+                        Domain registered with CloudFlare and site stored in private S3 bucket
+                    </li>
+                    <li>
+                        SSL/TLS Certificate generated with AWS Certificate Manager and verified with Cloudflare DNS
+                    </li>
+                    <li>
+                        CloudFront accesses private S3 bucket with REST api and OAC (Origin Access Control) for best practice and security
+                    </li>
+                    <li>
+                        CloudFront rereoutes all HTTP traffic to HTTPS for security
+                    </li>
+                    <li>
+                        Cloudflare used to set up appropraite DNS records
+                    </li>
+                </ul>
             </p>
             <p class="head"><b>Back-End API</b> <b style="color:orange">(In Development)</b></p>
 
