@@ -9,6 +9,3 @@ document.getElementById("homeButton").onclick = function () {
   document.getElementById("contactButton").onclick = function () {
       location.href = "contact.html";
   };
-  document.getElementById("featuresButton").onclick = function () {
-    location.href = "features.html";
-};
