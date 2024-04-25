@@ -9,3 +9,17 @@ document.getElementById("homeButton").onclick = function () {
   document.getElementById("contactButton").onclick = function () {
       location.href = "contact.html";
   };
+
+  function invokeCounter(){
+    fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {
+  method: "POST",
+  body: JSON.stringify({
+    userId: 1,
+    title: "Fix my bugs",
+    completed: false
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+});
+  }
