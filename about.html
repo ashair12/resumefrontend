@@ -86,29 +86,18 @@
                     </li>
                 </ul>
             </p>
-            <p class="head"><b>Back-End API</b> <b style="color:orange">(In Development)</b></p>
+            <p class="head"><b>Back-End API and Database</b> <b style="color:#5daa8e">(Complete)</b></p>
 
             <p>
+                A Back-End API was implemented with the serverless stack of DynamoDB, Lambda, and API Gateway
                 <ul>
-                    <li>Database (DynamoDB)</li>
-                    <li>API (API Gateway & Lambda)</li>
-                    <li>Source Control, CI/CD </li>
+                    <li>DynamoDB Database created to store site visitor timestamps</li>
+                    <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB table</li>
+                    <li>HTTP API created with API Gateway. When called, the API will trigger the Lambda function</li>
+                    <li>API called when anyone enters the website, which triggers the Lambda function</li>
                 </ul>
             </p>
-            <p class="head"><b>Front-end / Back-end Integration</b> <b style="color:red">(To Be Developed)</b></p>
-
-            <p>
-                <ul>
-                    <li>
-                        Connecting the Back-end API to the front-end
-                    </li>
-                    <li>
-                        Building automated tests
-                    </li>
-                </ul>
-            </p>
-            <p class="head"><b>Automation </b><b style="color:red">(To Be Developed)</b></p>
-
+            <p class="head"><b>Automation </b><b style="color:orange">(In Development)</b></p>
             <p>
                 <ul>
                     <li>
