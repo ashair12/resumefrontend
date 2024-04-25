@@ -3,11 +3,11 @@ document.getElementById("homeButton").onclick = function () {
   };
 
   document.getElementById("aboutButton").onclick = function () {
-      location.href = "about.html";
+      location.href = "about/index.html";
   };
 
   document.getElementById("contactButton").onclick = function () {
-      location.href = "contact.html";
+      location.href = "contact/index.html";
   };
 
   function invokeCounter(){
