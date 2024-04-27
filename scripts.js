@@ -14,9 +14,7 @@ document.getElementById("homeButton").onclick = function () {
     fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {
   method: "POST",
   body: JSON.stringify({
-    userId: 1,
-    title: "Fix my bugs",
-    completed: false
+
   }),
   headers: {
     "Content-type": "application/json; charset=UTF-8"
@@ -24,14 +22,19 @@ document.getElementById("homeButton").onclick = function () {
 });
   }
 
-  function retrieveCount(){
-    fetch("https://zjivjm5gye.execute-api.us-east-1.amazonaws.com/default/resume-db", {
-  method: "POST",
-  body: JSON.stringify({
-        
-  }),
-  headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
-});
+  async function retrieveCount(){
+
+    let headers = new Headers([
+      ['Content-Type', 'application/json'],
+      ['Accept', 'application/json']
+    ]);
+
+    let request = new Request('https://zjivjm5gye.execute-api.us-east-1.amazonaws.com/default/resume-db', {
+      method: 'GET',
+      headers: headers
+    });
+    let result = await fetch(request);
+    let response = await result.json();
+    console.log(response)
+    document.getElementById('response').innerHTML = JSON.stringify(response);
   }

@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
-    <body>
+    <body onload="retrieveCount()">
         <div class="sidenav">
             <a id="homeButton"  href="../#home" style="color:white">Resume</a>
             <a id ="aboutButton" class = "active" href="#about" style="color:white">About</a>
@@ -30,7 +30,6 @@
 <div class="stuff">
     <div id="headerabout">
         <div style="padding-left: 40%;"><h1>About</h1></div>
- 
         
         </div>
         <div id="content" style="margin-top:-4%">
@@ -94,11 +93,13 @@
                     <li>DynamoDB Database created to store site visitor timestamps</li>
                     <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB table</li>
                     <li>HTTP API created with API Gateway. When called, the API will trigger the Lambda function</li>
-                    <li>API called when anyone enters the website, which triggers the Lambda function</li>
-                    <li>REST API created and proxied to DynamoDB table to scan table and retrieve total item count</li>
-                    <li>New API can be used to show the total visitor count, as shown below:</li>
+                    <li>API is called when anyone enters the website</li>
+                    <li>New REST API created and proxied to DynamoDB table to scan table and retrieve total item count</li>
+                    <li>This new API can be used to show the total visitor count:</li>
                 </ul>
-            Visitor Count: 
+
+                <b class="head">Visitor Counter:      </b><b class="head" id="response" style="color:red"></b>
+
             </p>
             <p class="head"><b>Automation </b><b style="color:orange">(In Development)</b></p>
             <p>
@@ -137,4 +138,4 @@
         <script src="" async defer></script>
     </body>
 </html>
-<script src="scripts.js"></script>
+<script src="../scripts.js"></script>
