@@ -23,3 +23,15 @@ document.getElementById("homeButton").onclick = function () {
   }
 });
   }
+
+  function retrieveCount(){
+    fetch("https://zjivjm5gye.execute-api.us-east-1.amazonaws.com/default/resume-db", {
+  method: "POST",
+  body: JSON.stringify({
+        
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+});
+  }
