@@ -3,24 +3,26 @@ document.getElementById("homeButton").onclick = function () {
   };
 
   document.getElementById("aboutButton").onclick = function () {
-      location.href = "about/index.html";
+      location.href = "/about/index.html";
   };
 
   document.getElementById("contactButton").onclick = function () {
-      location.href = "contact/index.html";
+      location.href = "/contact/index.html";
   };
 
   function invokeCounter(){
-    fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {
-  method: "POST",
-  body: JSON.stringify({
+      fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {
+        method: "POST",
+        body: JSON.stringify({
+      
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      });
+  
+  }
 
-  }),
-  headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
-});
-  }
 
   async function retrieveCount(){
 

@@ -19,11 +19,11 @@
     <body onload="retrieveCount()">
         <div class="sidenav">
             <a id="homeButton"  href="../#home" style="color:white">Resume</a>
-            <a id ="aboutButton" class = "active" href="#about" style="color:white">About</a>
-            <a id = "contactButton"  href="../contact/index.html" style="color:white">Contact</a>
+            <a id ="aboutButton" class = "active" style="color:white">About</a>
+            <a id ="contactButton"  href="../contact/index.html" style="color:white">Contact</a>
           </div>
 
-          <div id="home" class="navcontent">
+          <div id="about" class="navcontent">
 
 
 
@@ -93,7 +93,7 @@
                     <li>DynamoDB Database created to store site visitor timestamps</li>
                     <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB table</li>
                     <li>HTTP API created with API Gateway. When called, the API will trigger the Lambda function</li>
-                    <li>API is called when anyone enters the website</li>
+                    <li>API is called when anyone enters the website for the first time</li>
                     <li>New REST API created and proxied to DynamoDB table to scan table and retrieve total item count</li>
                     <li>This new API can be used to show the total visitor count:</li>
                 </ul>
