@@ -9,7 +9,7 @@ document.getElementById("homeButton").onclick = function () {
   document.getElementById("contactButton").onclick = function () {
       location.href = "/contact/index.html";
   };
-
+/*
   function invokeCounter(){
       fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {
         method: "POST",
@@ -22,7 +22,7 @@ document.getElementById("homeButton").onclick = function () {
       });
   
   }
-
+*/
 
   async function retrieveCount(){
 
