@@ -9,6 +9,17 @@ document.getElementById("homeButton").onclick = function () {
   document.getElementById("contactButton").onclick = function () {
       location.href = "/contact/index.html";
   };
+
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
 /*
   function invokeCounter(){
       fetch("https://jqlxga5mc9.execute-api.us-east-1.amazonaws.com/default/visitorAdd", {

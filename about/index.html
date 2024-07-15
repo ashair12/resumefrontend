@@ -4,49 +4,65 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Ashair Imran - Cloud Resume</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Ashair Imran - Cloud Resume</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
-    <body onload="retrieveCount()">
-        <div class="sidenav">
-            <a id="homeButton"  href="../#home" style="color:white">Resume</a>
-            <a id ="aboutButton" class = "active" style="color:white">About</a>
-            <a id ="contactButton"  href="../contact/index.html" style="color:white">Contact</a>
-          </div>
 
-          <div id="about" class="navcontent">
+<body onload="retrieveCount()">
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <div id="mySidebar" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a id="homeButton" href="../#home" style="color:white">Resume</a>
+        <a id="aboutButton" class="active" style="color:white">About</a>
+        <a id="contactButton" href="../contact/index.html" style="color:white">Contact</a>
+    </div>
+
+    <div id="about" class="navcontent">
 
 
 
-<div class="stuff">
-    <div id="headerabout">
-        <div style="padding-left: 40%;"><h1>About</h1></div>
-        
-        </div>
-        <div id="content" style="margin-top:-4%">
-            <p class="head"><b>Introduction</b></p>
+        <div class="stuff">
+            <div id="headerabout">
+                <div style="padding-left: 40%;">
+                    <h1>About</h1>
+                </div>
 
-            <p>
-            Hi, my name is Muhammad Ashair Imran, welcome to my cloud-hosted resume. I am an aspiring Cloud Engineer and graduate in Computer Engineering from the University of Ottawa, as well as 4x certified in AWS. This website is a passion project I decided to create to refine and showcase my skills in AWS. The focus of this project is on the back-end AWS tools, hence the bare framework-less front-end shown to you now. Below I have listed all the features of the website and the various AWS tools I used. This project is on-going and will periodically be updated. The features are shown below, including features that are in-development or planned.
-            </p>
-            <p class="head"><b>Architecture Diagram</b></p>
-            <img src="/images/diagram.png" style="width:100%;height:100%;float:center;border:2px solid black;">
+            </div>
+            <div id="content" style="margin-top:-4%">
+                <p class="head"><b>Introduction</b></p>
 
-            <p class="head"><b>Features</b></p>
+                <p>
+                    Hi, my name is Muhammad Ashair Imran, welcome to my cloud-hosted resume. I am an aspiring Cloud
+                    Engineer and graduate in Computer Engineering from the University of Ottawa, as well as 4x certified
+                    in AWS. This website is a passion project I decided to create to refine and showcase my skills in
+                    AWS. The focus of this project is on the back-end AWS tools, hence the bare framework-less front-end
+                    shown to you now. Below I have listed all the features of the website and the various AWS tools I
+                    used. This project is on-going and will periodically be updated. The features are shown below,
+                    including features that are in-development or planned.
+                </p>
+                <p class="head"><b>Architecture Diagram</b></p>
+                <img src="/images/diagram.png" style="width:100%;height:100%;float:center;border:2px solid black;">
 
-            <p class="head"><b>Access and Credentials</b><b style="color:#5daa8e"> (Complete)</b></p>
+                <p class="head"><b>Features</b></p>
 
-            <p>
-                Access and credentials were setup in a professional way to prioritize security and industry standards.
+                <p class="head"><b>Access and Credentials</b><b style="color:#5daa8e"> (Complete)</b></p>
+
+                <p>
+                    Access and credentials were setup in a professional way to prioritize security and industry
+                    standards.
                 <ul>
                     <li>
                         Use of Root account avoided where possible
@@ -59,17 +75,17 @@
                         Different OUs for production and test.
                     </li>
                     <li>
-                        AWS SSO (IAM Identity Center) from root to access accounts in OUs 
+                        AWS SSO (IAM Identity Center) from root to access accounts in OUs
                     </li>
                 </ul>
                 <p>
                     This was done to simulate and gain experience in how professional cloud teams manage their accounts.
                 </p>
-            </p>
-            <p class="head"><b>S3 and CloudFront Hosting</b> <b style="color:#5daa8e">(Complete)</b></p>
+                </p>
+                <p class="head"><b>S3 and CloudFront Hosting</b> <b style="color:#5daa8e">(Complete)</b></p>
 
-            <p>
-                This website is hosted on S3 and distributed with Amazon CloudFront
+                <p>
+                    This website is hosted on S3 and distributed with Amazon CloudFront
                 <ul>
                     <li>
                         Domain registered with CloudFlare and site stored in private S3 bucket
@@ -78,7 +94,8 @@
                         SSL/TLS Certificate generated with AWS Certificate Manager and verified with Cloudflare DNS
                     </li>
                     <li>
-                        CloudFront accesses private S3 bucket with REST api and OAC (Origin Access Control) for best practice and security
+                        CloudFront accesses private S3 bucket with REST api and OAC (Origin Access Control) for best
+                        practice and security
                     </li>
                     <li>
                         CloudFront reroutes all HTTP traffic to HTTPS for security
@@ -87,25 +104,27 @@
                         Cloudflare used to set up appropriate DNS records
                     </li>
                 </ul>
-            </p>
-            <p class="head"><b>Back-End API and Database</b> <b style="color:#5daa8e">(Complete)</b></p>
+                </p>
+                <p class="head"><b>Back-End API and Database</b> <b style="color:#5daa8e">(Complete)</b></p>
 
-            <p>
-                A Back-End API was implemented with the serverless stack of DynamoDB, Lambda, and API Gateway
+                <p>
+                    A Back-End API was implemented with the serverless stack of DynamoDB, Lambda, and API Gateway
                 <ul>
                     <li>DynamoDB Database created to store site visitor timestamps</li>
-                    <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB table</li>
+                    <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB
+                        table</li>
                     <li>HTTP API created with API Gateway. When called, the API will trigger the Lambda function</li>
                     <li>API is called when anyone enters the website for the first time</li>
-                    <li>New REST API created and proxied to DynamoDB table to scan table and retrieve total item count</li>
+                    <li>New REST API created and proxied to DynamoDB table to scan table and retrieve total item count
+                    </li>
                     <li>This new API can be used to show the total visitor count:</li>
                 </ul>
 
-                <b class="head">Visitor Counter:      </b><b class="head" id="response" style="color:red"></b>
+                <b class="head">Visitor Counter: </b><b class="head" id="response" style="color:red"></b>
 
-            </p>
-            <p class="head"><b>Automation </b><b style="color:orange">(In Development)</b></p>
-            <p>
+                </p>
+                <p class="head"><b>Automation </b><b style="color:orange">(In Development)</b></p>
+                <p>
                 <ul>
                     <li>
                         Updating the development process to use Infrastructure as Code. Using Terraform
@@ -114,15 +133,15 @@
                         CI/CD with GitHub Actions <b style="color:#5daa8e"> (Complete) </b>
                     </li>
                 </ul>
-            </p> 
-            <p class="head"><b>Front-End Improvements </b><b style="color:red">(To Be Developed)</b></p>
-            <p>
+                </p>
+                <p class="head"><b>Front-End Improvements </b><b style="color:orange">(In Development)</b></p>
+                <p>
                 <ul>
                     <li>
                         Improving front-end to be more aesthetically pleasing and user-friendly
                     </li>
                     <li>
-                        Mobile support
+                        Mobile support <b style="color:#5daa8e"> (Complete) </b>
                     </li>
                     <li>
                         Framework
@@ -131,14 +150,15 @@
                         Aesthetic overhaul
                     </li>
                 </ul>
-            </p> 
+                </p>
+            </div>
         </div>
-</div>
 
-</div>
+    </div>
 
-        
-        <script src="" async defer></script>
-    </body>
+
+    <script src="" async defer></script>
+</body>
+
 </html>
 <script src="../scripts.js"></script>
