@@ -45,12 +45,11 @@
                 <p class="head"><b>Introduction</b></p>
 
                 <p>
-                    Hi, my name is Muhammad Ashair Imran, welcome to my cloud-hosted resume. I am an aspiring Cloud
-                    Engineer and graduate in Computer Engineering from the University of Ottawa, as well as 4x certified
-                    in AWS. This website is a passion project I decided to create to refine and showcase my skills in
+                    Hi, my name is Muhammad Ashair Imran, welcome to my cloud-hosted resume. I am an aspiring Cloud and DevOps 
+                    Engineer and graduate in Computer Engineering from the University of Ottawa, as well as 5x certified
+                    in AWS. This website is a passion project I built from scratch to refine and showcase my skills in
                     AWS. The focus of this project is on the back-end AWS tools, hence the bare framework-less front-end
-                    shown to you now. Below I have listed all the features of the website and the various AWS tools I
-                    used. This project is on-going and will periodically be updated. The features are shown below,
+                    shown to you now. This project is on-going and will periodically be updated. The features are shown below,
                     including features that are in-development or planned.
                 </p>
                 <p class="head"><b>Architecture Diagram</b></p>
@@ -112,15 +111,17 @@
                 <ul>
                     <li>DynamoDB Database created to store site visitor timestamps</li>
                     <li>Lambda function created in python that when triggered, will append a visitor to the DynamoDB
-                        table</li>
+                        table including the X-Forwarded-For header (sourceip) and timestamp</li>
                     <li>HTTP API created with API Gateway. When called, the API will trigger the Lambda function</li>
                     <li>API is called when anyone enters the website for the first time</li>
                     <li>New REST API created and proxied to DynamoDB table to scan table and retrieve total item count
                     </li>
                     <li>This new API can be used to show the total visitor count:</li>
+                    
                 </ul>
 
                 <b class="head">Visitor Counter: </b><b class="head" id="response" style="color:red"></b>
+                <br><a><i style="font-size:11px">last reset on 2024-07-15</i></a>
 
                 </p>
                 <p class="head"><b>Automation </b><b style="color:orange">(In Development)</b></p>
