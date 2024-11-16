@@ -1,13 +1,13 @@
 document.getElementById("homeButton").onclick = function () {
-      location.href = "/";
+      location.href = "index.html";
   };
 
   document.getElementById("aboutButton").onclick = function () {
-      location.href = "/about";
+      location.href = "/about/index.html";
   };
 
   document.getElementById("contactButton").onclick = function () {
-      location.href = "/contact";
+      location.href = "/contact/index.html";
   };
 
   function openNav() {
